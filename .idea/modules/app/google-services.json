@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "595498915909",
+    "firebase_url": "https://whysoserious-3eeb9.firebaseio.com",
+    "project_id": "whysoserious-3eeb9",
+    "storage_bucket": "whysoserious-3eeb9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595498915909:android:ce12b93d65c0322c0dab2c",
+        "android_client_info": {
+          "package_name": "com.raywenderlich.android.whysoserious"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595498915909-nt2ioqge4p9h9ntm48ildf3jr14iflba.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.raywenderlich.android.whysoserious",
+            "certificate_hash": "9807444b1cde45d1c838f4e2311fe7d3d1ee6f47"
+          }
+        },
+        {
+          "client_id": "595498915909-20upf50o366j4elm83521iv22q39to38.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0uFyI_e6X1OjCzijfk1yXdRrRI1zRv7w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595498915909-20upf50o366j4elm83521iv22q39to38.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
