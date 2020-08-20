@@ -26,6 +26,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import com.raywenderlich.android.whysoserious.R
 import com.raywenderlich.android.whysoserious.common.onPageChange
 import com.raywenderlich.android.whysoserious.ui.main.pager.MainPagerAdapter
@@ -64,8 +65,9 @@ class MainActivity : AppCompatActivity() {
       bottomNavigation.selectedItemId = item.itemId
     }
 
-   // addJoke.onClick { startActivity(Intent(this, AddJokeActivity::class.java)) }
+
   }
+
 
   private fun switchNavigationTab(position: Int) = mainPager.setCurrentItem(position, true)
 }

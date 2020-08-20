@@ -39,4 +39,3 @@ fun isPhoneValid(phone: String): Boolean = phone.length >= MIN_PHONE_LENGTH
 
 fun arePasswordsSame(password: String, repeatPassword: String) = isPasswordValid(password) && isPasswordValid(repeatPassword) && password == repeatPassword
 
-fun isValidJoke(jokeText: String) = jokeText.length >= MIN_JOKE_LENGTH

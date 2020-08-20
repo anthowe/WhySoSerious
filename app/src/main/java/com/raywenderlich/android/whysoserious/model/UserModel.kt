@@ -25,11 +25,11 @@ package com.raywenderlich.android.whysoserious.model
 data class UserResponse(val id: String = "",
                         val username: String = "",
                         val email: String = "",
-                        val phone: String,
-                        val favoriteJokes: List<Joke> = listOf())
+                        val phone: String
+                        )
 
 data class User(val id: String,
                 val username: String,
                 val email: String,
-                val phone: String,
-                val favoriteJokes: List<Joke> = listOf())
+                val phone: String
+                )

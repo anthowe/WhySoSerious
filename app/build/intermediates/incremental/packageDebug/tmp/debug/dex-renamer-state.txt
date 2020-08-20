@@ -1,4 +1,4 @@
-#Wed Aug 19 12:40:33 EDT 2020
-base.0=C\:\\Users\\DR-Front\\Desktop\\Whysoserious\\Whysoserious\\Whysoserious - starter\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Thu Aug 20 11:40:42 EDT 2020
+base.0=C\:\\Users\\DR-Front\\Desktop\\Why\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

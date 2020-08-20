@@ -22,18 +22,12 @@
 
 package com.raywenderlich.android.whysoserious.firebase.database
 
-import com.raywenderlich.android.whysoserious.model.Joke
+
 import com.raywenderlich.android.whysoserious.model.User
 
 interface FirebaseDatabaseInterface {
 
-  fun listenToJokes(onResult: (Joke) -> Unit)
 
-  fun addNewJoke(joke: Joke, onResult: (Boolean) -> Unit)
-
-  fun changeJokeFavoriteStatus(joke: Joke, userId: String)
-
-  fun getFavoriteJokes(userId: String, onResult: (List<Joke>) -> Unit)
 
   fun createUser(id: String, name: String, email: String, phone: String)
 

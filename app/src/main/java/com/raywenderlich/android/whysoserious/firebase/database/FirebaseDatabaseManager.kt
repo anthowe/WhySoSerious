@@ -22,15 +22,19 @@
 
 package com.raywenderlich.android.whysoserious.firebase.database
 
+
 import android.util.Log
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
-import com.raywenderlich.android.whysoserious.model.Joke
+import com.google.firebase.database.ValueEventListener
 import com.raywenderlich.android.whysoserious.model.User
+import com.raywenderlich.android.whysoserious.model.UserResponse
 import javax.inject.Inject
 
 private const val KEY_USER = "user"
-private const val KEY_JOKE = "joke"
-private const val KEY_FAVORITE = "favorite"
+//private const val KEY_JOKE = "joke"
+//private const val KEY_FAVORITE = "favorite"
 
 
 class FirebaseDatabaseManager @Inject constructor(private val database: FirebaseDatabase) : FirebaseDatabaseInterface {
@@ -45,18 +49,9 @@ Log.i("Activity", "FDM called")
             .setValue(user)   // 4
   }
 
-  override fun listenToJokes(onResult: (Joke) -> Unit) {
-  }
 
-  override fun addNewJoke(joke: Joke, onResult: (Boolean) -> Unit) {
-  }
-
-  override fun getFavoriteJokes(userId: String, onResult: (List<Joke>) -> Unit) {
-  }
-
-  override fun changeJokeFavoriteStatus(joke: Joke, userId: String) {
-  }
 
   override fun getProfile(id: String, onResult: (User) -> Unit) {
+
   }
 }
