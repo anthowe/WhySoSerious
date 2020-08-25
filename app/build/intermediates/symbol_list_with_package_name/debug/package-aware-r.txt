@@ -1590,6 +1590,7 @@ id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
 id action_text
+id action_verizonFragment2_to_fragmentStart
 id actions
 id activity_chooser_view_content
 id add
@@ -1667,8 +1668,7 @@ id fitToContents
 id fixed
 id floating
 id forever
-id fragment
-id fragment2
+id fragmentStart
 id fragment_container_view_tag
 id ghost_view
 id ghost_view_holder
@@ -1697,6 +1697,7 @@ id listMode
 id list_item
 id loginButton
 id logoutButton
+id logoutVerizonButton
 id mainPager
 id masked
 id media_actions
@@ -1731,6 +1732,7 @@ id mtrl_picker_text_input_range_end
 id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
+id myNavHostFragment
 id myProfile
 id nav_controller_view_tag
 id nav_host_fragment_container
@@ -1833,6 +1835,7 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -1862,6 +1865,8 @@ id useLogo
 id userEmail
 id userName
 id usernameInput
+id verizonFragment
+id verizonFragment2
 id view_offset_helper
 id visible
 id visible_removing_fragment_view_tag
@@ -1938,6 +1943,7 @@ layout abc_tooltip
 layout activity_login
 layout activity_main
 layout activity_register
+layout activity_verizon
 layout activity_welcome
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -1955,6 +1961,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_nav
 layout fragment_profile
 layout fragment_start
 layout fragment_verizon
@@ -2166,6 +2173,8 @@ string status_bar_notification_info_overflow
 string username_error
 string username_hint
 string username_text
+string verizon
+string verizon_text
 string welcome_description
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

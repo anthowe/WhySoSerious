@@ -24,15 +24,20 @@ package com.raywenderlich.android.whysoserious.ui.profile
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import com.raywenderlich.android.whysoserious.R
 import com.raywenderlich.android.whysoserious.common.onClick
 import com.raywenderlich.android.whysoserious.profilePresenter
+import com.raywenderlich.android.whysoserious.ui.verizon.VerizonActivity
 import com.raywenderlich.android.whysoserious.ui.welcome.WelcomeActivity
 import kotlinx.android.synthetic.main.fragment_profile.*
+import kotlinx.android.synthetic.main.fragment_profile.logoutButton
+import kotlinx.android.synthetic.main.fragment_verizon.*
 
 class ProfileFragment : Fragment(), ProfileView {
 
@@ -40,12 +45,15 @@ class ProfileFragment : Fragment(), ProfileView {
 
   override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
     return inflater.inflate(R.layout.fragment_profile, container, false)
+
   }
 
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
     presenter.setView(this)
     initUi()
+    Log.e("Hi", "Profile")
+
   }
 
   private fun initUi() {
@@ -62,8 +70,8 @@ class ProfileFragment : Fragment(), ProfileView {
 
 
 
-  override fun openWelcome() {
-    startActivity(Intent(activity, WelcomeActivity::class.java))
+  override fun openVerizon() {
+    startActivity(Intent(activity, VerizonActivity::class.java))
     activity?.finish()
   }
 }

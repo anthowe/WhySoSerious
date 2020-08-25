@@ -31,3 +31,5 @@ fun registerPresenter() = component().registerPresenter()
 fun profilePresenter() = component().profilePresenter()
 
 fun welcomePresenter() = component().welcomePresenter()
+
+fun verizonPresenter()= component().verizonPresenter()

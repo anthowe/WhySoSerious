@@ -2,4 +2,21 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation" />
+    android:id="@+id/navigation"
+    app:startDestination="@id/verizonFragment2">
+
+    <fragment
+        android:id="@+id/verizonFragment2"
+        android:name="com.raywenderlich.android.whysoserious.ui.verizon.VerizonFragment"
+        android:label="fragment_verizon"
+        tools:layout="@layout/fragment_verizon" >
+        <action
+            android:id="@+id/action_verizonFragment2_to_fragmentStart"
+            app:destination="@id/fragmentStart" />
+    </fragment>
+    <activity
+        android:id="@+id/fragmentStart"
+        android:name="com.raywenderlich.android.whysoserious.ui.main.FragmentStart"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" />
+</navigation>

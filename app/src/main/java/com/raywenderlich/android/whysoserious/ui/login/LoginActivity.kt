@@ -23,13 +23,18 @@
 package com.raywenderlich.android.whysoserious.ui.login
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.raywenderlich.android.whysoserious.R
 import com.raywenderlich.android.whysoserious.common.onClick
 import com.raywenderlich.android.whysoserious.common.onTextChanged
 import com.raywenderlich.android.whysoserious.common.showGeneralError
 import com.raywenderlich.android.whysoserious.loginPresenter
+import com.raywenderlich.android.whysoserious.ui.main.FragmentStart
 import com.raywenderlich.android.whysoserious.ui.main.MainActivity
+import com.raywenderlich.android.whysoserious.ui.main.MainActivity.Companion.getLaunchIntent
+import com.raywenderlich.android.whysoserious.ui.verizon.VerizonActivity
+
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity(), LoginView {
@@ -41,6 +46,7 @@ class LoginActivity : AppCompatActivity(), LoginView {
     setContentView(R.layout.activity_login)
     presenter.setView(this)
     initUi()
+    Log.e("Hi", "Login")
   }
 
   private fun initUi() {

@@ -49,5 +49,5 @@ class ProfilePresenterImpl @Inject constructor(
     }
   }
 
-  override fun logOut() = authenticationInterface.logOut { view.openWelcome() }
+  override fun logOut() = authenticationInterface.logOut { view.openVerizon() }
 }

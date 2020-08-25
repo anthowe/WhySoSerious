@@ -28,5 +28,5 @@ interface ProfileView {
 
   fun showEmail(email: String)
 
-  fun openWelcome()
+  fun openVerizon()
 }

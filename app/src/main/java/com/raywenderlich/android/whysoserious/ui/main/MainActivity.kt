@@ -25,12 +25,15 @@ package com.raywenderlich.android.whysoserious.ui.main
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.raywenderlich.android.whysoserious.R
 import com.raywenderlich.android.whysoserious.common.onPageChange
 import com.raywenderlich.android.whysoserious.ui.main.pager.MainPagerAdapter
+
 import com.raywenderlich.android.whysoserious.ui.profile.ProfileFragment
+import com.raywenderlich.android.whysoserious.ui.verizon.VerizonFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -46,11 +49,12 @@ class MainActivity : AppCompatActivity() {
     setContentView(R.layout.activity_main)
 
     initUi()
+    Log.e("Hi", "Main")
   }
 
   private fun initUi() {
     val adapter = MainPagerAdapter(supportFragmentManager)
-    adapter.setPages(listOf(ProfileFragment()))
+    adapter.setPages(listOf(ProfileFragment(), VerizonFragment()))
 
     mainPager.adapter = adapter
     mainPager.offscreenPageLimit = 3

@@ -38,4 +38,6 @@ interface AppComponent {
   fun profilePresenter(): ProfilePresenter
 
   fun welcomePresenter(): WelcomePresenter
+
+  fun verizonPresenter(): VerizonPresenter
 }

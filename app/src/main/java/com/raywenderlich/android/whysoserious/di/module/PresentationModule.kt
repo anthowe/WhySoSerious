@@ -44,4 +44,8 @@ abstract class PresentationModule {
 
   @Binds
   abstract fun welcomePresenter(welcomePresenterImpl: WelcomePresenterImpl): WelcomePresenter
+
+  @Binds
+  abstract fun verizonPresenter(verizonPresenterImpl:VerizonPresenterImpl): VerizonPresenter
+
 }

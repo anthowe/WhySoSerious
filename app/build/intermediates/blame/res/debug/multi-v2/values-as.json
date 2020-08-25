@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\DR-Front\\Desktop\\Why\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-as\\values-as.xml",
+            "outputFile": "C:\\Users\\DR-Front\\Desktop\\WhySoSerious\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-as\\values-as.xml",
             "map": [
                 {
                     "source": "C:\\Users\\DR-Front\\.gradle\\caches\\transforms-2\\files-2.1\\b854c2806df21d42e3a791422503a9dd\\appcompat-1.2.0\\res\\values-as\\values-as.xml",

@@ -29,10 +29,11 @@
         android:screenOrientation="portrait"
         android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
 
-    <activity
-        android:name=".ui.addJoke.AddJokeActivity"
-        android:screenOrientation="portrait"
-        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+<activity android:name=".ui.verizon.VerizonActivity">
+
+
+
+</activity>
 
     <activity
         android:name=".ui.main.MainActivity"

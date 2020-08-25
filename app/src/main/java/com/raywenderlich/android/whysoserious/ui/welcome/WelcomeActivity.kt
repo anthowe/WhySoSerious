@@ -24,12 +24,15 @@ package com.raywenderlich.android.whysoserious.ui.welcome
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.raywenderlich.android.whysoserious.R
 import com.raywenderlich.android.whysoserious.common.onClick
 import com.raywenderlich.android.whysoserious.ui.login.LoginActivity
 import com.raywenderlich.android.whysoserious.ui.main.MainActivity
+import com.raywenderlich.android.whysoserious.ui.main.MainActivity.Companion.getLaunchIntent
 import com.raywenderlich.android.whysoserious.ui.register.RegisterActivity
+import com.raywenderlich.android.whysoserious.ui.verizon.VerizonActivity
 import com.raywenderlich.android.whysoserious.welcomePresenter
 import kotlinx.android.synthetic.main.activity_welcome.*
 
@@ -46,6 +49,7 @@ class WelcomeActivity : AppCompatActivity(), WelcomeView {
 
     registerButton.onClick { startActivity(Intent(this, RegisterActivity::class.java)) }
     loginButton.onClick { startActivity(Intent(this, LoginActivity::class.java)) }
+    Log.e("Hi", "Welcome")
   }
 
   override fun startMainScreen() = startActivity(MainActivity.getLaunchIntent(this))

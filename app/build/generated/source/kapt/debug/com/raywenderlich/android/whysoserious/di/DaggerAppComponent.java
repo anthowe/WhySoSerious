@@ -7,10 +7,12 @@ import com.raywenderlich.android.whysoserious.firebase.database.FirebaseDatabase
 import com.raywenderlich.android.whysoserious.presentation.LoginPresenter;
 import com.raywenderlich.android.whysoserious.presentation.ProfilePresenter;
 import com.raywenderlich.android.whysoserious.presentation.RegisterPresenter;
+import com.raywenderlich.android.whysoserious.presentation.VerizonPresenter;
 import com.raywenderlich.android.whysoserious.presentation.WelcomePresenter;
 import com.raywenderlich.android.whysoserious.presentation.implementation.LoginPresenterImpl;
 import com.raywenderlich.android.whysoserious.presentation.implementation.ProfilePresenterImpl;
 import com.raywenderlich.android.whysoserious.presentation.implementation.RegisterPresenterImpl;
+import com.raywenderlich.android.whysoserious.presentation.implementation.VerizonPresenterImpl;
 import com.raywenderlich.android.whysoserious.presentation.implementation.WelcomePresenterImpl;
 import dagger.internal.Preconditions;
 
@@ -72,6 +74,19 @@ public final class DaggerAppComponent implements AppComponent {
   @Override
   public WelcomePresenter welcomePresenter() {
     return new WelcomePresenterImpl(
+        new FirebaseAuthenticationManager(
+            Preconditions.checkNotNull(
+                firebaseModule.firebaseAuth(),
+                "Cannot return null from a non-@Nullable @Provides method")));
+  }
+
+  @Override
+  public VerizonPresenter verizonPresenter() {
+    return new VerizonPresenterImpl(
+        new FirebaseDatabaseManager(
+            Preconditions.checkNotNull(
+                firebaseModule.firebaseDatabase(),
+                "Cannot return null from a non-@Nullable @Provides method")),
         new FirebaseAuthenticationManager(
             Preconditions.checkNotNull(
                 firebaseModule.firebaseAuth(),
